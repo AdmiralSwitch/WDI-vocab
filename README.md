@@ -112,3 +112,102 @@ WDI Vocab
 * A datatype that is related to another datatype (the supertype). Program elements written to operate on elements of the supertype can also operate on elements of the subtype.
 
 [Wikipedia: Subtyping](http://en.wikipedia.org/wiki/Subtyping)
+
+
+## Status Codes
+[List_of_HTTP_status_codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
+
+100 - Continue. 
+
+200  -  Success
+
+201 - Successful POST
+
+202 - Request being processed
+ 
+206 - Partial Information returned
+300  -  Redirect
+301 - Moved Permanently
+     307 - Temporary Redirect
+     308 - Permanent Redirect
+400  -  Client error
+     403 - Forbidden, unauthorized
+     404 - Not Found
+     410 - File removed.
+     429 -  Use has sent too many requests
+500  -  Server error
+     502 - Bad gateway
+     503 - Service Unavailable
+     508 -  Infinite loop
+
+## Associative Array
+An abstract data type composed of a collection of  pairs, such that each possible key appears at most once in the collection.
+Arrays with named indexes are called associative arrays (or hashes)
+
+[Hashes](http://ruby-doc.org/core-2.1.2/Hash.html)
+
+[Javascript Associative Arrays Demystified](http://blog.xkoder.com/2008/07/10/javascript-associative-arrays-demystified/)
+
+##Query String
+In the World Wide Web, a query string is the part of a uniform resource locator (URL) containing data that does not fit conveniently into a hierarchical path structure.
+
+
+
+## Abstraction Principle
+Reduce duplication of code in a program whenever practical by making use of abstractions provided by the programming language or software libraries. DRY
+
+##SMTP
+Simple Mail Transfer Protocol is the internet standard for email.
+
+##Self Reference
+Self referencing is in the context of data -- you have a data type that contains a reference to something of the same type.
+
+##Boolean ||
+Means OR
+
+##Port 80
+Port that a web server is typically available through. (Hypertext protocol)
+[List of Port Numbers](http://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)
+
+
+## Dictionary
+Dictionary isn’t in Javascript but you can use object notation
+```
+states_dictionary={"CT":["alex","harry"],"AK":["liza","alex"],"TX":["fred","harry"]};
+```
+In Ruby a dictionary is a hash: [Hashes](http://www.ruby-doc.org/core-2.1.1/Hash.html)
+
+##Session Store
+An application has a session for each user in which you can store small amounts of data that will be persisted between requests. All session stores use a cookie to store a unique ID for each session (you must use a cookie, Rails will not allow you to pass the session ID in the URL as this is less secure).
+
+[Session](http://guides.rubyonrails.org/action_controller_overview.html#session)
+
+##Event Queue
+
+Most events are asynchronous. When an asynchronous event occurs, it gets into the Event queue. The browser has inner loop, called Event Loop, which checks the queue and processes events, executes functions etc.
+For example, if the browser is busy processing your onclick, and another event happened in the background (like script onload), it appends to the queue. When the onclick handler is complete, the queue is checked and the script is executed. 
+http://javascript.info/tutorial/events-and-timing-depth
+Static Method
+Static methods neither require an instance of the class nor can they implicitly access the data (or this, self etc.) of such an instance.
+http://en.wikipedia.org/wiki/Method_(computer_programming)#Static_methods
+
+In Ruby:
+```
+def
+	self.checkPings
+end
+```
+
+http://stackoverflow.com/questions/5231534/ruby-on-rails-static-method
+
+##Variable Instantiation
+
+An object instance is created from a class through the a process called instantiation. In Ruby this takes place through the Class method new.
+
+```
+  anObject = MyClass.new(parameters)
+
+``` 
+[Classes](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Classes)
+
+##Pass By Value
