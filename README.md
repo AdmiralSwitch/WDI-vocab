@@ -211,3 +211,69 @@ An object instance is created from a class through the a process called instanti
 [Classes](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Classes)
 
 ##Pass By Value
+
+
+
+
+
+
+##Stack Memory
+In terms of computer memory, the stack is an area of random-access memory (RAM) allocated to hold all of the parameters and local variables associated with any function used by currently running software. The stack is also responsible for remembering the order in which functions are called so they can be returned correctly. Whenever a function is called, the parameters and local variables associated with it are added to the stack. When the function returns, the parameters and the variables are removed ("popped") from the stack. This is why a program's stack size changes continuously while the program is running.
+
+
+##Event Loop
+The system can't know when a user will click a button or do some interaction. But when he does, the event will propagated to the event loop, which is basically a loop that checks for new events in the queue and process them.  aka. Callbacks.
+
+
+##XSS
+(Cross-Site Scripting) is a type of computer security vulnerability typically found in Web applications.  XSS enables attackers to inject client-side script into Web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same origin policy.
+
+##HTTP
+(Hypertext Transfer Protocol) is the foundation of data communication for the World Wide Web.  Hypertext is structured text that uses logical links (hyperlinks) between nodes containing text. HTTP is the protocol to exchange or transfer hypertext.
+
+##Port 25
+Many email clients and services use port 25 for SMTP(single Mail Transfer Protocol)to send out emails. However an ISP (Internet Service Provider) may block port 25 in order to prevent spamming by its customers.  It is the virtual pathway that most e-mail traffic follows when it travels form your computer to server.
+
+##Restful API
+RESTful APIs include additional links the program can follow to request related information - similar to how you would click on a link to visit a new page - or to submit data to update the given resource - similar to how you would fill out a web form to create a new account for a web site. 
+
+##Concurrent
+Is a form of computing in which several computations are executing during overlapping time periods, instead of sequentially.
+
+##Side Effects
+- Refers to the modification of some kind of state.  For example:
+- Changing the value of a variable
+- Writing some data to disk
+- Enabling or disabling a button in the User Inferface.
+
+Side Effect = changings something somewhere.
+
+##Lambdas
+Refers to anonymous functions in programming.  It allows you to write quick throw away functions without naming them.  It also provides a nice way to write closures.
+
+##TSL/SSL
+(Transport Layer Security protocol/ Secure Sockets Layer protocol) In the authentication process, a TLS/SSL client sends a message to a TLS/SSL server, and the server responds with the information that the server needs to authenticate itself. 
+
+The client and server perform an additional exchange of session keys, and the authentication dialog ends. When authentication is completed, SSL-secured communication can begin between the server and the client using the symmetric encryption keys that are established during the authentication process.
+
+##Document Store Database
+or Document-oriented database.  It is a computure program designed for stroing, retrieving, and managing document-oriented information.  Examples are NoSQL and MongoDB.  These databases operate on something similar to hash tables to store key/value pairs.  Are not relational databases.
+
+##Pass By Reference 
+when sharing the URL.  You are passing by reference.  An example is when sharing a URL.  You can use that URL to see the same web page I can see. If that page is changed, we both see the changes. If you delete the URL, all you're doing is destroying your reference to that page - you're not deleting the actual page itself.
+
+*http://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value*
+
+##FTP
+(File Transfer Protocol) is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet 
+
+##Encapsulation
+In OOP, Encapsulation is the packing of data and functions into a single component. 
+- A language mechanism for restricting access to some of the object's components.
+- A language construct that facilitates the bundling of data with the methods (or other functions) operating on that data.
+
+
+
+
+
+
