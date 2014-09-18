@@ -38,7 +38,7 @@ WDI Vocab
 * Memory allocated from the heap will remain allocated until one of the following occurs:
 	* The memory is free'd
 	* The program terminates
-	
+
 [Stack Overflow: What is a memory heap?](http://stackoverflow.com/questions/2308751/what-is-a-memory-heap)
 
 
@@ -81,7 +81,7 @@ WDI Vocab
 * In computer science, a **primitive data type** can mean either of the following:
 	* A **basic type** is a data type provided by a programming language as a basic building block. Most languages allow more complicated composite types to be recursively constructed starting from basic types.
 	* A **built-in type** is a data type for which the programming language provides built-in support.
-	
+
 [Wikipedia: Primitive Data Type](http://en.wikipedia.org/wiki/Primitive_data_type)
 
 
@@ -117,14 +117,14 @@ WDI Vocab
 ## Status Codes
 [List_of_HTTP_status_codes](http://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
-100 - Continue. 
+100 - Continue.
 
 200  -  Success
 
 201 - Successful POST
 
 202 - Request being processed
- 
+
 206 - Partial Information returned
 300  -  Redirect
 301 - Moved Permanently
@@ -185,7 +185,7 @@ An application has a session for each user in which you can store small amounts 
 ##Event Queue
 
 Most events are asynchronous. When an asynchronous event occurs, it gets into the Event queue. The browser has inner loop, called Event Loop, which checks the queue and processes events, executes functions etc.
-For example, if the browser is busy processing your onclick, and another event happened in the background (like script onload), it appends to the queue. When the onclick handler is complete, the queue is checked and the script is executed. 
+For example, if the browser is busy processing your onclick, and another event happened in the background (like script onload), it appends to the queue. When the onclick handler is complete, the queue is checked and the script is executed.
 http://javascript.info/tutorial/events-and-timing-depth
 Static Method
 Static methods neither require an instance of the class nor can they implicitly access the data (or this, self etc.) of such an instance.
@@ -207,7 +207,7 @@ An object instance is created from a class through the a process called instanti
 ```
   anObject = MyClass.new(parameters)
 
-``` 
+```
 [Classes](http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Classes)
 
 ##Pass By Value
@@ -235,7 +235,7 @@ The system can't know when a user will click a button or do some interaction. Bu
 Many email clients and services use port 25 for SMTP(single Mail Transfer Protocol)to send out emails. However an ISP (Internet Service Provider) may block port 25 in order to prevent spamming by its customers.  It is the virtual pathway that most e-mail traffic follows when it travels form your computer to server.
 
 ##Restful API
-RESTful APIs include additional links the program can follow to request related information - similar to how you would click on a link to visit a new page - or to submit data to update the given resource - similar to how you would fill out a web form to create a new account for a web site. 
+RESTful APIs include additional links the program can follow to request related information - similar to how you would click on a link to visit a new page - or to submit data to update the given resource - similar to how you would fill out a web form to create a new account for a web site.
 
 ##Concurrent
 Is a form of computing in which several computations are executing during overlapping time periods, instead of sequentially.
@@ -252,28 +252,61 @@ Side Effect = changings something somewhere.
 Refers to anonymous functions in programming.  It allows you to write quick throw away functions without naming them.  It also provides a nice way to write closures.
 
 ##TSL/SSL
-(Transport Layer Security protocol/ Secure Sockets Layer protocol) In the authentication process, a TLS/SSL client sends a message to a TLS/SSL server, and the server responds with the information that the server needs to authenticate itself. 
+(Transport Layer Security protocol/ Secure Sockets Layer protocol) In the authentication process, a TLS/SSL client sends a message to a TLS/SSL server, and the server responds with the information that the server needs to authenticate itself.
 
 The client and server perform an additional exchange of session keys, and the authentication dialog ends. When authentication is completed, SSL-secured communication can begin between the server and the client using the symmetric encryption keys that are established during the authentication process.
 
 ##Document Store Database
 or Document-oriented database.  It is a computure program designed for stroing, retrieving, and managing document-oriented information.  Examples are NoSQL and MongoDB.  These databases operate on something similar to hash tables to store key/value pairs.  Are not relational databases.
 
-##Pass By Reference 
+##Pass By Reference
 when sharing the URL.  You are passing by reference.  An example is when sharing a URL.  You can use that URL to see the same web page I can see. If that page is changed, we both see the changes. If you delete the URL, all you're doing is destroying your reference to that page - you're not deleting the actual page itself.
 
 *http://stackoverflow.com/questions/373419/whats-the-difference-between-passing-by-reference-vs-passing-by-value*
 
 ##FTP
-(File Transfer Protocol) is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet 
+(File Transfer Protocol) is a standard network protocol used to transfer computer files from one host to another host over a TCP-based network, such as the Internet
 
 ##Encapsulation
-In OOP, Encapsulation is the packing of data and functions into a single component. 
+In OOP, Encapsulation is the packing of data and functions into a single component.
 - A language mechanism for restricting access to some of the object's components.
 - A language construct that facilitates the bundling of data with the methods (or other functions) operating on that data.
 
 
+##Event Driven Programming
+A programming paradigm in which the flow of the program is determined by events (like mouse clicks, key presses), sensor outputs, or messages from other programs.
 
+Dominant paradigm in GUIs and JavaScript apps, that are centered around performing certain actions based on user input.
 
+##Stack Overflow
+Occurs when the stack pointer exceeds the stack bound.
+
+When a program attempts to use more space than is available on the call stack (that is, when it attempts to access memory beyond the call stack's bounds) the stack is said to "overflow", usually causing the program to crash.
+
+Most common cause is excessively deep or infinite recursion.
+
+##Slug
+The term comes from the newspaper industry! How people would refer to a story in the production process.
+
+A few words that describe a post or page. Usually a URL friendly version of the post title. Meant to be used with permalink, as they help describe what the content of the URL is.
+
+##Control Flow
+Refers to the order in which the individual statements, instructions or function calls of a program are executed.
+
+##Contiguous (as in memory)
+Contiguous memory is adjacent memory, chunks of memory that are next to one another. Two contiguous memory chunks have sequential memory addresses. These can be consolidated into one chunk by the memory manager.
+
+##Cryptography
+Hash and salt your shit. <br>
+[link for insight](http://programmers.stackexchange.com/questions/51403/what-should-web-programmers-know-about-cryptography)
+
+##CSRF
+Stands for: Cross-site request forgery <br>
+Also known as: *one-click attack* or *session riding*<br>
+A type of malicious exploit of a website where unauthorized commands are transmitted from a user the website trusts.
+
+It is carried out from the user's IP address. <br>
+
+[This is confusing, read more about it](http://en.wikipedia.org/wiki/Cross-site_request_forgery)
 
 
